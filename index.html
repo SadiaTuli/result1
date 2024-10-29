@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Result</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="result.js"></script>
+</head>
+<body>
+  <h3 class="text-center">Mark Sheet</h3>
+  <div class="container mt-5">
+    <form>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="text">Full Name:</label>
+             <input type="text" class="form-control" placeholder="" id="name-text">
+            
+           </div>
+          <div class="form-group">
+            <label for="text">Class:</label>
+            <select name="" id="class-text" class="form-control">
+              <option value="">Select One</option>
+              <option value="six">Six</option>
+              <option value="seven">Seven</option>
+              <option value="eight">Eight</option>
+              <option value="nine">Nine</option>
+              <option value="ten">Ten</option>
+              <option value="degree 1st">Degree 1st</option>
+            </select>
+           </div>
+        </div>
+         <div class="col-6">
+           <div class="form-group">
+            <label for="text">Roll:</label>
+             <input type="number" class="form-control" placeholder="" id="roll-text">
+           
+           </div>
+           <div class="form-group">
+            <label for="text">Section:</label>
+            <select name="" id="sec-text" class="form-control">
+              <option value="">Select One</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select>
+           </div>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-6 ">
+          <div class="form-group">
+            <label for="text">Bangla</label>
+             <input type="number" class="form-control" placeholder="Enter mark of Bangla" id="bangla">
+           </div>
+          <div class="form-group">
+            <label for="text">English</label>
+             <input type="number" class="form-control" placeholder="Enter mark of English" id="english">
+           </div>
+          <div class="form-group">
+            <label for="text">Math</label>
+             <input type="number" class="form-control" placeholder="Enter mark of Math" id="math">
+           </div>
+        </div>
+        <div class="col-6 ">
+          <div class="form-group">
+            <label for="text">Physics</label>
+             <input type="number" class="form-control" placeholder="Enter mark of Psysics" id="physics">
+           </div>
+          <div class="form-group">
+            <label for="text">Chemistry</label>
+             <input type="number" class="form-control" placeholder="Enter mark of Chemistry" id="chemistry">
+           </div>
+          <div class="form-group">
+            <label for="text">Biology</label>
+             <input type="number" class="form-control" placeholder="Enter mark of Biology" id="biology">
+           </div>
+        </div>        
+      </div>
+       <div class="row mt-5">
+           <div class="col-4">
+           </div>
+           <div class="col-4">
+             <button type="button"class="btn btn-primary btn-block">Submit</button>
+           </div>
+           <div class="col-4">
+             
+           </div>
+          </div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="border mb-3 p-5">
+            <div class="row">
+              <div class="col-6">
+                <label for="">Name:</label>
+                <span id="dis-name"></span>
+                <br>
+                <label for="">Class:</label>
+                <span id="dis-class"></span>
+              </div>
+               <div class="col-6">
+                 <label for="">Roll:</label>
+                <span id="dis-roll"></span><br>
+                 <label for="">Section:</label>
+                <span id="dis-sec"></span>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table class="table table-bordered mt-5">
+        <tr>
+          <th>Serial</th>
+          <th>Subject</th>
+          <th>Mark</th>
+          <th>Grade Point</th>
+           <th>Grade</th>
+          <th>GPA</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td >Bangla</td>
+          <td id="mbangla">-</td>
+          <td id="gp-bangla">-</td>
+          <td id="grade-bangla">-</td>
+          <td rowspan="6" id="gpa"style="text-align:center;vertical-align:middle;"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td >English</td>
+          <td id="menglish">-</td>
+          <td id="gp-english">-</td>
+           <td id="grade-english">-</td>
+          
+        </tr>
+        <tr>
+          <td>3</td>
+          <td >Math</td>
+          <td id="mmath">-</td>
+          <td id="gp-math">-</td>
+           <td id="grade-math">-</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td >Physics</td>
+          <td id="mphysics">-</td>
+          <td id="gp-phy">-</td>
+           <td id="grade-phy">-</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td >Chemistry</td>
+          <td id="mchemistry">-</td>
+          <td id="gp-che">-</td>
+           <td id="grade-che">-</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td >Biology</td>
+          <td id="mbiology">-</td>
+          <td id="gp-bio">-</td>
+           <td id="grade-bio">-</td>
+        </tr>
+       
+      </table>
+    </form>
+  </div>
+</body>
+</html>
